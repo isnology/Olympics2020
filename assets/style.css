@@ -1,26 +1,35 @@
 .logo {
-    width: 20%;
+    width: 15%;
+}
+
+.logo-2020 {
+    width: 11%;
+    padding-left: 25px;
 }
 
 body {
     background-image: url("/assets/stadium.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
-body > h1 {
-    width: 50%;
-    color: #0071C5
-}
-
-body > p {
-    width: 50%;
+  body > h1 {
+    width: 45%;
     color: #0071C5;
-}
+    font-size: 20px;
+} 
 
-.olympic {
+ body > p {
+    width: 35%;
+    color: #0071C5; 
+} 
+
+/* .olympic {
     width: 20%;
     justify-content: flex-end;
     align-content: flex-end;
     float: right;
-}
+} */

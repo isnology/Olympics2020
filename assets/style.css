@@ -1,0 +1,26 @@
+.logo {
+    width: 20%;
+}
+
+body {
+    background-image: url("/assets/stadium.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body > h1 {
+    width: 50%;
+    color: #0071C5
+}
+
+body > p {
+    width: 50%;
+    color: #0071C5;
+}
+
+.olympic {
+    width: 20%;
+    justify-content: flex-end;
+    align-content: flex-end;
+    float: right;
+}

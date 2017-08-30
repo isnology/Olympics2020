@@ -1,17 +1,39 @@
+.tabs ul {
+    list-style-type: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom-color: #dbdbdb;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+
 .logo {
     width: 15%;
 }
 
 .logo-2020 {
     width: 11%;
-    padding-left: 25px;
+    padding-left: 30px;
 }
 
 body {
     background-image: url("/assets/stadium.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
     padding-left: 15px;
     padding-top: 15px;
 }

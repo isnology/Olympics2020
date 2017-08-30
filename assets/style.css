@@ -1,26 +1,137 @@
-.logo {
-    width: 20%;
-}
 
 body {
-    background-image: url("/assets/stadium.jpg");
+    background-image: url(/assets/stadium.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    padding-top: 15px;
+    color: #0071c5;
 }
 
 body > h1 {
-    width: 50%;
-    color: #0071C5
-}
+    /* display: inline-block; */
+    font-size: 20px;
+    width: 45%;
+    padding-top: 50px;
+    }
 
 body > p {
-    width: 50%;
-    color: #0071C5;
+    width: 35%;
 }
 
-.olympic {
-    width: 20%;
-    justify-content: flex-end;
-    align-content: flex-end;
-    float: right;
+.main-wrap {
+    overflow: hidden;
 }
+
+.leftcolumn {
+    float: left;
+    width: 39%;
+}
+
+.rightcolumn {
+    float: right;
+    width: 55%;
+}
+.intel {
+    width: 15%;
+}
+
+.symbol {
+    position: absolute;
+    width: 591px;
+    height: 584px;
+    left: 811px;
+    top: 38px;
+}
+
+.rings {
+    position: absolute;
+    width: 486px;
+    height: 237px;
+    left: 877px;
+    top: 745px;
+}
+
+.wrapper {
+    text-align: center;
+    width: auto;
+}
+
+ul { list-style: none; }
+
+    li {
+      display: inline;
+      overflow: hidden;
+      text-align: center;
+      width: 100px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      
+      &:hover { color: #fb8805; }
+      
+    }
+    
+  }
+nav[role="navigation"] {
+    background: transparent;
+    float: left;
+    ul { float: left; }
+    
+    li {
+      
+      a {
+        border-bottom: 4px solid transparent;
+        padding: 0 15px 9px 15px;
+        @include transition (color .15s ease-in-out 0s);
+        
+        &:hover {
+         border-bottom: 4px solid #fb8805;
+         padding: 0 15px 7px 15px;
+         @include transition (padding .15s ease-in-out 0s);
+        }
+        
+      }
+      
+    }
+    
+  }
+  
+
+  .utilities {
+    display: inline-block;
+    float: right;
+  }
+    li { margin-right: 1em; }
+
+    form {
+      bottom: 8px;
+      display: inline-block;
+      position: relative;
+      
+      input {
+        background: #66757f;
+        border: none;
+        height: 30px;
+        padding: 0 1em;
+        width: 180px;
+        @include border-radius(21px);
+      }
+      
+    }
+    
+  }
+  
+  .active {
+    border-bottom: 4px solid #fb8805;
+    padding: 0 0 7px 0;
+  }
+    &:hover {
+      border: none;
+      padding: 0 0 7px 0;
+      @include transition (padding 0s ease-in-out 0s);
+    }
+  }

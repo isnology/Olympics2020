@@ -9,13 +9,13 @@ body {
 }
 
 body > h1 {
-    /* display: inline-block; */
     font-size: 20px;
     width: 45%; 
     padding-top: 50px; 
     }
 
 body > p {
+    padding-top: 50px; 
     width: 35%;
 }
 
@@ -32,30 +32,52 @@ body > p {
     float: right;
     width: 55%;
 }   
+
 .intel {
-    width: 15%; 
+    width: 35%; 
 }
 
 .symbol {
-    position: absolute;
-    width: 591px;
-    height: 584px;
-    left: 811px;
-    top: 38px;    
+    float: right; 
+    padding-right: 20px;
+    position: relative; 
+    width: 75%;
+    height: 65%;
+}
+
+.heading {
+    float: top-right; 
+    position: absolute; 
+    color: white; 
+    font-size: 30px;
+    text-align: right; 
+    padding-right: 8%; 
+    top: 65%;
+}
+
+.red {
+    width: 7%; 
+    height: 7%; 
+    padding-top: 100px; 
 }
 
 .rings {
+    float: right; 
     position: absolute;
-    width: 486px;
-    height: 237px;
-    left: 877px;
-    top: 745px;    
+    width: 40%; 
+    height: 34%;
+    top: 88%; 
+    right: 2%; 
 }
 
-.wrapper {
+.up {
+    padding-top: -80px; 
+}
+
+/* .wrapper {
     text-align: center;
     width: auto;
-}
+} */
 
 ul { list-style: none; }
 

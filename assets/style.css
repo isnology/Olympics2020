@@ -14,9 +14,8 @@ body > h1 {
     padding-top: 50px; 
     }
 
-body > p {
-    padding-top: 50px; 
-    width: 35%;
+p {
+    width: 90%;
 }
 
 .main-wrap {
@@ -79,80 +78,31 @@ body > p {
     width: auto;
 } */
 
-ul { list-style: none; }
-
-    li {
-      display: inline;
-      overflow: hidden;
-      text-align: center;
-      width: 100px;
-    }
-
-    a { 
-      color: white;
-      text-decoration: none;
-      
-      &:hover { color: #fb8805; }
-      
-    }
-    
-  }  
-nav[role="navigation"] {
-    background: transparent;
-    float: left;
-    ul { float: left; }
-    
-    li {
-      
-      a {
-        border-bottom: 4px solid transparent;
-        padding: 0 15px 9px 15px;
-        @include transition (color .15s ease-in-out 0s);
-        
-        &:hover {
-         border-bottom: 4px solid #fb8805;
-         padding: 0 15px 7px 15px;
-         @include transition (padding .15s ease-in-out 0s);
-        }
-        
-      }
-      
-    }
-    
+nav {
+    max-width: 60%;
   }
   
-
-  .utilities {
+  nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  nav ul li {
     display: inline-block;
-    float: right;
-  }
-    li { margin-right: 1em; }
-
-    form {
-      bottom: 8px;
-      display: inline-block;
-      position: relative;
-      
-      input {
-        background: #66757f;
-        border: none;
-        height: 30px;
-        padding: 0 1em;
-        width: 180px;
-        @include border-radius(21px);
-      }
-      
-    }
-    
   }
   
-  .active {
-    border-bottom: 4px solid #fb8805;
-    padding: 0 0 7px 0;
+  nav ul li a {
+    padding: 14px;
+    font-family: ‘Roboto’ bold;
+    text-transform: uppercase;
+    color: #F2F2F2 ;
+    font-size: 15px;
+    text-decoration: none;
+    display: block; 
   }
-    &:hover {
-      border: none;
-      padding: 0 0 7px 0;
-      @include transition (padding 0s ease-in-out 0s);
-    }
+  
+  nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
   }
